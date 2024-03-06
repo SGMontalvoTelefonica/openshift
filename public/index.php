@@ -1,13 +1,19 @@
 <?php
 
+    echo '<h1>Hola Sergio</H1>';
+
     //Nos conectamos a la bbdd
     try {
+
+        echo '<p>Conectando a base de datos</p>';
 
         //Asignamos la conexión
         $db = new mysqli($_ENV['MYSQL_DATABASE'], $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD'], $dataBase);
 
         //Si se conecta a la base de datos, retorna la conexión    
         return $db;
+
+        echo '<p>¡Éxito!/p>';
 
     } 
     catch (\Throwable $th) {
@@ -18,7 +24,5 @@
 
         exit;
     }
-
-	echo '<h1>Hola Sergio</H1>';
 
 ?>
