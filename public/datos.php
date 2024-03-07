@@ -13,10 +13,6 @@
 
         echo '<p>Conectando a base de datos...</p>';
 
-        echo '<p>Cargando variables de entorno</p>';
-
-        var_dump($_ENV);
-
         //Asignamos la conexión
         $db = new mysqli($_ENV['MYSQL_DATABASE'], $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD'], $dataBase);
 
