@@ -18,6 +18,9 @@
         echo '<p>Cargando la variable "MYSQL_USER"</p>';
         var_dump(getenv('MYSQL_USER'));
 
+        echo '<p>Cargando todas las variables ambientales</p>';
+        var_dump(getenv());
+        
         echo '<p>¡Éxito!</p>';
 
     } 
