@@ -13,8 +13,9 @@
         echo '<p>Cargando variables de entorno</p>';
 
         var_dump(getenv('patata'));
+        var_dump(getenv('MYSQL_USER'));
 
-        echo '<p>¡Éxito!/p>';
+        echo '<p>¡Éxito!</p>';
 
     } 
     catch (\Throwable $th) {
