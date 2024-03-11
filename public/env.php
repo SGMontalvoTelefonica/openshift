@@ -12,7 +12,10 @@
 
         echo '<p>Cargando variables de entorno</p>';
 
+        echo '<p>Cargando la variable "patata"</p>';
         var_dump(getenv('patata'));
+
+        echo '<p>Cargando la variable "MYSQL_USER"</p>';
         var_dump(getenv('MYSQL_USER'));
 
         echo '<p>¡Éxito!</p>';
