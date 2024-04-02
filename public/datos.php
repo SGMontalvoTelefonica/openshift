@@ -18,6 +18,11 @@
         $pass = getenv("database_password");
         $database =   getenv("database_name");
 
+        echo $host;
+        echo $user;
+        echo $pass;
+        echo $database;
+
         //Asignamos la conexión
         $con = new mysqli($host, $user, $pass, $database);
 
