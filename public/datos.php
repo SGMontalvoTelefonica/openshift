@@ -13,7 +13,7 @@
 
         echo '<p>Conectando a base de datos...</p>';
 
-        $host = getenv("MYSQL_SERVICE_HOST")
+        $host = getenv("MYSQL_SERVICE_HOST");
         $user = getenv("database_user");
         $pass = getenv("database_password");
         $database =   getenv("database_name");
