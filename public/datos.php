@@ -2,6 +2,8 @@
 
     <h1>Viendo los datos</H1>
 
+     echo '<p>Edición 02/04/2024 - A</p>';
+
     <a href="index.php"> Volver al index</a>
 
 </html>
