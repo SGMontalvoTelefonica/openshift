@@ -13,13 +13,25 @@
 
         echo '<p>Conectando a base de datos...</p>';
 
+        $host = getenv("MYSQL_SERVICE_HOST")
+        $user = getenv("database_user");
+        $pass = getenv("database_password");
+        $database =   getenv("database_name");
+
         //Asignamos la conexión
-        $db = new mysqli($_ENV['MYSQL_DATABASE'], $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD'], $dataBase);
+        $con = new mysqli($host, $user, $pass, $database);
 
-        //Si se conecta a la base de datos, retorna la conexión    
-        return $db;
+        if(!$con){
+            echo '<p>No se ha podido conectar con la bbdd/p>';
+        }
+        else{
 
-        echo '<p>¡Éxito!/p>';
+            echo '<p>¡Éxito!/p>';
+
+            //Si se conecta a la base de datos, retorna la conexión    
+            return $con;
+
+        }   
 
     } 
     catch (\Throwable $th) {
