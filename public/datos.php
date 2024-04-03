@@ -2,7 +2,7 @@
 
     <h1>Viendo los datos</H1>
 
-     echo '<p>Edición 03/04/2024 - A</p>';
+    <p>Edición 03/04/2024 - B</p>
 
     <a href="index.php"> Volver al index</a>
 
@@ -19,6 +19,15 @@
         $user = getenv("MYSQL_USER");
         $pass = getenv("MYSQL_PASSWORD");
         $database =   getenv("MYSQL_NAME");
+
+        echo $user;
+        echo '<br>';
+        echo pass;
+        echo '<br>';
+        echo $database;
+        echo '<br>';
+        echo $host;
+        echo '<br>';
 
         //Asignamos la conexión
         $con = new mysqli($host, $user, $pass, $database);
