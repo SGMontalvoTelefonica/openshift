@@ -16,14 +16,14 @@
         echo '<p>Conectando a base de datos...</p>';
 
         $host = getenv("MYSQL_SERVICE_HOST");
-        $user = getenv("database_user");
-        $pass = getenv("database_password");
-        $database =   getenv("database_name");
+        $user = getenv("MYSQL_USER");
+        $pass = getenv("MYSQL_PASSWORD");
+        $database =   getenv("MYSQL_NAME");
 
-        echo $host;
-        echo $user;
-        echo $pass;
-        echo $database;
+        echo '<p>' $host; '<p>'
+        echo '<p>' $user; '<p>'
+        echo '<p>' $pass; '<p>'
+        echo '<p>' $database; '<p>'
 
         //Asignamos la conexión
         $con = new mysqli($host, $user, $pass, $database);
@@ -33,7 +33,7 @@
         }
         else{
 
-            echo '<p>¡Éxito!/p>';
+            echo '<p>¡Éxito!</p>';
 
             //Si se conecta a la base de datos, retorna la conexión    
             return $con;
