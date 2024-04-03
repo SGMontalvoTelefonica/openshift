@@ -22,7 +22,7 @@
 
         echo $user;
         echo '<br>';
-        echo pass;
+        echo $pass;
         echo '<br>';
         echo $database;
         echo '<br>';
