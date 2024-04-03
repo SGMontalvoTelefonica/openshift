@@ -20,10 +20,10 @@
         $pass = getenv("MYSQL_PASSWORD");
         $database =   getenv("MYSQL_NAME");
 
-        echo '<p>' $host; '<p>'
-        echo '<p>' $user; '<p>'
-        echo '<p>' $pass; '<p>'
-        echo '<p>' $database; '<p>'
+        echo '<p>' $host '<p>';
+        echo '<p>' $user '<p>';
+        echo '<p>' $pass '<p>';
+        echo '<p>' $database '<p>';
 
         //Asignamos la conexión
         $con = new mysqli($host, $user, $pass, $database);
